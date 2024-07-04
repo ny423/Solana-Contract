@@ -1,0 +1,20 @@
+[package]
+name = "solana_lst"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "solana_lst"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+
+
+[dependencies]
+anchor-lang = "0.29.0"
+anchor-spl = "0.29.0"  # Add this line for SPL Token support
+solana-program = "1.8.0" # Ensure compatibility with the Anchor version
